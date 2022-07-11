@@ -1,0 +1,391 @@
+html,
+body {
+  margin: 0;
+}
+body {
+  background-color: #333;
+}
+header {
+  border-bottom: solid snow 1px;
+}
+footer {
+  margin-top: 3%;
+  border-top: solid snow 1px;
+}
+a {
+  text-decoration: none;
+}
+#box-title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 24em;
+}
+#box-title h1 {
+  font-weight: bold;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: snow;
+  background-image: url(images/Puple\ wave.gif);
+  padding: 3%;
+  font-size: 3em;
+  font-family: "Architects Daughter", cursive;
+  margin-bottom: -2%;
+}
+@keyframes title {
+  0% {
+    color: snow;
+  }
+  50% {
+    color: transparent;
+  }
+  100% {
+    color: snow;
+  }
+}
+#da {
+  animation: title 4s infinite;
+}
+#mind {
+  animation: title 4s 1s infinite;
+}
+#challenge {
+  animation: title 4s 2s infinite;
+}
+img[src="images/leaderboard.png"] {
+  width: 5%;
+  position: absolute;
+  right: 2%;
+  top: 0%;
+}
+img[src="images/brain.png"] {
+  width: 3%;
+  position: absolute;
+  right: 8%;
+  top: 1.5%;
+}
+img[src="images/brain.png"]:hover,
+img[src="images/leaderboard.png"]:hover {
+  cursor: pointer;
+}
+
+.main-container button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 70%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  border-radius: 1em;
+}
+#no {
+  opacity: 0;
+}
+.active p {
+  font-family: "Syne Tactile", cursive;
+  font-weight: bold;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: url(images/Puple\ wave.gif);
+}
+.locked {
+  cursor: not-allowed;
+  pointer-events: none;
+  background-color: royalblue;
+}
+.locked p,
+.arc {
+  font-family: "Architects Daughter", cursive;
+}
+.main-container button p {
+  margin-top: 0;
+  padding: 2%;
+  text-align: left;
+  font-size: 5em;
+}
+.main-container button:hover {
+  cursor: pointer;
+}
+
+/* ________________Login,sign-up,account_________________________________________________________________________________________________________________________________________________ */
+
+.main-container2,
+#sign-box,
+.main-container3,
+#side-container,
+#already,
+.login-box {
+  background-color: rgb(99, 99, 99);
+  border: solid transparent 3px;
+  border-image: url(images/Puple\ wave.gif) 1% stretch;
+  box-shadow: 0px 10px 13px -7px #000000, 10px 5px 21px 2px rgba(0, 0, 0, 0.36);
+}
+#sign-box {
+  position: relative;
+  width: 20%;
+  margin: 1%;
+}
+#sign-box h1,
+.main-container2 h1,
+#already h1 {
+  color: snow;
+  font-family: "Architects Daughter", cursive;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 1%;
+}
+#sign-box a > h1,
+#already a > h1,
+.color {
+  margin-top: -6%;
+  font-weight: bolder;
+  font-size: 2em;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: url(images/Puple\ wave.gif);
+}
+#already {
+  width: 20%;
+  text-align: center;
+  float: left;
+  margin: 1%;
+  margin-top: -61%;
+}
+.main-container2.login {
+  margin-top: -15%;
+}
+.main-container2,
+.main-container3 {
+  margin-top: 2%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  clear: left;
+}
+.main-container2 {
+  width: 65%;
+}
+.main-container2 h1 {
+  font-size: 2em;
+}
+.main-container2 input {
+  margin-top: -4%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2em;
+}
+.btn {
+  font-size: 4em;
+  font-weight: bold;
+  font-family: "Architects Daughter", cursive;
+  border-radius: 0.25em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  background-image: url(images/Puple\ wave.gif);
+  box-shadow: 0px 10px 13px -7px #000000, 10px 5px 21px 2px rgba(0, 0, 0, 0.36);
+}
+.btn:hover {
+  cursor: pointer;
+}
+.btn.two {
+  display: inline;
+  font-size: 2em;
+  margin-left: 2%;
+}
+.tiny {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Architects Daughter", cursive;
+  margin-top: 3%;
+}
+#hidden {
+  opacity: 0;
+}
+.logout-link {
+  color: black;
+}
+#rememberTitle {
+  margin-top: -2%;
+}
+input[type="checkbox"] {
+  width: 1em;
+  height: 1em;
+  margin-bottom: -3%;
+}
+.login-box {
+  font-family: "Architects Daughter", cursive;
+  width: 40%;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 9;
+  position: absolute;
+  left: 30%;
+  top: 5%;
+  /* opacity: 0; */
+}
+.login-box input {
+  font-size: 2em;
+}
+.btn.mini {
+  font-size: 2em;
+}
+#rememberMini {
+  margin-bottom: -4%;
+}
+#mini-login #sign-box {
+  float: left;
+  position: absolute;
+  left: 65%;
+  z-index: 10;
+}
+
+/* _____________cartle____________________________________________________________________________________________________________________________________________________ */
+
+.main-container3 {
+  margin-top: -0.9%;
+}
+.main-container3.temp {
+  margin-top: unset;
+}
+.row input {
+  border-radius: 10%;
+  font-size: 5em;
+  width: 1em;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "Architects Daughter", cursive;
+}
+.row {
+  width: fit-content;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+}
+.keyboard button {
+  width: 2em;
+  font-size: 3em;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  margin-bottom: 0.5%;
+  border-radius: 10%;
+  font-family: "Architects Daughter", cursive;
+}
+.key.Y {
+  background-color: rgb(255, 255, 83);
+}
+.key.G {
+  background-color: rgb(69, 156, 69);
+}
+.keyboard-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#enter {
+  border-radius: 1em;
+  width: 4em;
+}
+.submitAttempt {
+  display: none;
+}
+#btnThree {
+  display: none;
+}
+#side-container {
+  font-family: "Architects Daughter", cursive;
+  width: 20%;
+  text-align: center;
+  float: left;
+  margin: 1%;
+}
+#side-container p {
+  display: inline;
+  border: #000000 solid 3px;
+  padding: 1.5%;
+  font-weight: bold;
+  font-size: 1.5em;
+  border-radius: 10%;
+  width: 2em;
+}
+.result {
+  display: inline;
+}
+.result.b {
+  background-color: snow;
+}
+.result.g {
+  background-color: rgb(69, 156, 69);
+}
+.result.y {
+  background-color: rgb(255, 255, 83);
+}
+#space {
+  opacity: 0;
+  margin-top: -3%;
+}
+
+/* _____________leader board____________________________________________________________________________________________________________________________________________________ */
+
+#chartContainer {
+  background-color: #333 !important;
+}
+
+/* ________________chess_________________________________________________________________________________________________________________________________________________ */
+
+#chessBoard {
+  width: fit-content;
+}
+.strip {
+  display: inline-flex;
+}
+#chessBoard div div {
+  width: 5.5em;
+  height: 5.5em;
+}
+.white {
+  background-color: #eae9d2;
+}
+.dark {
+  background-color: #4b7399;
+}
+
+/* ________________win_________________________________________________________________________________________________________________________________________________ */
+#win .main-container2 {
+  color: snow;
+  font-family: "Architects Daughter", cursive;
+  text-align: center;
+  padding: 1%;
+}
+#win .main-container2 h1 {
+  font-size: 4em;
+  margin-top: -2%;
+  margin-bottom: -2%;
+}
+#win .main-container2 p {
+  font-size: 3em;
+}
+.sub-msg {
+  font-size: 170% !important;
+}
+.smallOne {
+  font-size: 70%;
+}
+.smallTwo {
+  font-size: 50%;
+}
+.bigOne {
+  font-size: 150%;
+}
